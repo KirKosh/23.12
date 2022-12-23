@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <input id="elem1" type="submit" value="elem1">
+    <input id="elem2" type="submit" value="elem2">
+    <input id="elem3" type="submit" value="elem3">
+    <input id="elem4" type="submit" value="elem4">
+    <input id="elem5" type="submit" value="elem5">
+    <script>
+        
+        let elem1 = document.querySelector('#elem1');
+        let elem2 = document.querySelector('#elem2');
+        let elem3 = document.querySelector('#elem3');
+        let elem4 = document.querySelector('#elem4');
+        let elem5 = document.querySelector('#elem5');
+        elem1.addEventListener('click', func);
+        elem2.addEventListener('click', func);
+        elem3.addEventListener('click', func);
+        elem4.addEventListener('click', func);
+        elem5.addEventListener('click', func);
+        function func() {
+      	console.log('message');
+        }
+    </script>
+  </body>
+</html>
